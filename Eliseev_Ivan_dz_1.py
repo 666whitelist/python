@@ -9,26 +9,26 @@
 """
 
 
-# 1 минута = 60 сек
-# 1 час = 60 минут
-# 1 день = 24 часа
+1 минута = 60 сек
+1 час = 60 минут
+1 день = 24 часа
 
 
-# for i in range(5):
-#     user_time = int(input('Введите кол-во секунд:'))
-#     sec = user_time % 60  # находим секунды как остаток
-#     min = user_time // 60  # находим минуты
-#     hour = user_time // 3600  # находим часы(в одном часе 3600 сек)
-#     days = user_time // 86400  # находим дни(в одном дне 86400 сек)
-#
-#     if user_time < 60:
-#         print(f'{user_time} сек')
-#     elif user_time >= 60 and user_time < 3600:
-#         print(f'{min} мин {sec} сек')
-#     elif user_time >= 3600 and user_time < 86400:
-#         print(f'{hour} час {min - (hour * 60)} мин {sec} сек')
-#     elif user_time >= 86400:
-#         print(f'{days} дн {hour - (days * 24)} час {min - (hour * 60) } мин {sec} сек')
+for i in range(5):
+    user_time = int(input('Введите кол-во секунд:'))
+    sec = user_time % 60  # находим секунды как остаток
+    min = user_time // 60  # находим минуты
+    hour = user_time // 3600  # находим часы(в одном часе 3600 сек)
+    days = user_time // 86400  # находим дни(в одном дне 86400 сек)
+
+    if user_time < 60:
+        print(f'{user_time} сек')
+    elif user_time >= 60 and user_time < 3600:
+        print(f'{min} мин {sec} сек')
+    elif user_time >= 3600 and user_time < 86400:
+        print(f'{hour} час {min - (hour * 60)} мин {sec} сек')
+    elif user_time >= 86400:
+        print(f'{days} дн {hour - (days * 24)} час {min - (hour * 60) } мин {sec} сек')
 
 """
 Создать список, состоящий из кубов нечётных чисел от 1 до 1000:
@@ -47,29 +47,19 @@ for number in numbers:
         # numbers.append(number)
 
 
-# numbers = [i ** 3 for i in range(1, 1001, 2)]
-#
-# result_1 = sum(filter(lambda number: x(number) % 7 == 0, numbers))
-# result_2 = sum(filter(lambda number:x(number + 17) % 7 == 0, numbers))
-
-# print(list(map(lambda x: x**2, numbers)))
-# # получить список числа к строке
-# print(list(map(lambda x: str(x), numbers)))
-
-
 
 """
 Реализовать склонение слова «процент» для чисел до 20. Например, задаем число 5 — получаем «5 процентов», задаем число 2 — получаем «2 процента». Вывести все склонения для проверки.
 """
 
-# user_number = int(input('Введите число от 1 до 20'))
-#
-# if user_number == 1 :
-#     print(f'{user_number} процент')
-# elif user_number >= 2 and user_number <= 4:
-#     print(f'{user_number} процента')
-# else:
-#     print(f'{user_number} процентов')
-#
-#
-#
+user_number = int(input('Введите число от 1 до 20'))
+
+if user_number == 1 :
+    print(f'{user_number} процент')
+elif user_number >= 2 and user_number <= 4:
+    print(f'{user_number} процента')
+else:
+    print(f'{user_number} процентов')
+
+
+
